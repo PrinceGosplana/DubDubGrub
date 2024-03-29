@@ -122,7 +122,7 @@ struct FirstNameAvatarView: View {
 
     var body: some View {
         VStack {
-            AvatarView(size: 64)
+            UserAvatar(size: 64)
             Text(firstName)
                 .bold()
                 .lineLimit(1)

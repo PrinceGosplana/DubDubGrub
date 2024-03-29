@@ -26,7 +26,7 @@ struct LocationListView: View {
     LocationListView()
 }
 
-struct AvatarView: View {
+struct UserAvatar: View {
 
     var size: CGFloat
 
@@ -56,11 +56,11 @@ struct LocationCell: View {
                     .minimumScaleFactor(0.75)
 
                 HStack {
-                    AvatarView(size: 35)
-                    AvatarView(size: 35)
-                    AvatarView(size: 35)
-                    AvatarView(size: 35)
-                    AvatarView(size: 35)
+                    UserAvatar(size: 35)
+                    UserAvatar(size: 35)
+                    UserAvatar(size: 35)
+                    UserAvatar(size: 35)
+                    UserAvatar(size: 35)
                 }
             }
             .padding(.leading)
