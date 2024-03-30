@@ -9,7 +9,10 @@ import SwiftUI
 
 struct LocationListView: View {
 
-    @State private var locations: [DDGLocation] = [DDGLocation(record: MockData.location)]
+    @State private var locations: [DDGLocation] = [DDGLocation(record: MockData.location),
+                                                   DDGLocation(record: MockData.location2),
+                                                   DDGLocation(record: MockData.location3)
+    ]
 
     var body: some View {
         NavigationStack {
