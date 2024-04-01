@@ -15,7 +15,7 @@ struct MockData {
         record[DDGLocation.kAddress]        = "123 Main Street"
         record[DDGLocation.kDescription]    = "This is a test description. Isn't it awesome. Not sure how long to make it to test the 3 lines."
         record[DDGLocation.kWebsiteURL]     = "https://seanallen.co"
-        record[DDGLocation.kLocation]       = CLLocation(latitude: 37.331516, longitude: -121.891054)
+        record[DDGLocation.kLocation]       = CLLocation(latitude: 37.326543, longitude: -121.891032)
         record[DDGLocation.kPhoneNumber]    = "111-111-1111"
 
         return record
@@ -39,7 +39,7 @@ struct MockData {
         record[DDGLocation.kAddress]        = "123 Main Street"
         record[DDGLocation.kDescription]    = "It's Chipotle. Enough said."
         record[DDGLocation.kWebsiteURL]     = "https://seanallen.co"
-        record[DDGLocation.kLocation]       = CLLocation(latitude: 37.331508, longitude: -121.891044)
+        record[DDGLocation.kLocation]       = CLLocation(latitude: 37.333211, longitude: -121.8915)
         record[DDGLocation.kPhoneNumber]    = "222-222-2222"
 
         return record

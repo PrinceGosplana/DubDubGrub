@@ -16,7 +16,13 @@ struct LocationMapView: View {
 
     var body: some View {
         ZStack {
-            Map(initialPosition: .region(viewModel.region)).ignoresSafeArea()
+            Map(initialPosition: .region(viewModel.region)) {
+                ForEach(locationManager.locations) { location in
+                    Marker(location.name, coordinate: location.location.coordinate)
+                        .tint(.brandPrimary)
+                }
+            }
+            .ignoresSafeArea()
 
             VStack {
                 LogoImage().shadow(radius: 10)

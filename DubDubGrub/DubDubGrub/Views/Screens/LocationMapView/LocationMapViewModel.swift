@@ -8,6 +8,7 @@
 import MapKit
 import SwiftUI
 
+@MainActor
 final class LocationMapViewModel: ObservableObject {
 
     @Published var region = MKCoordinateRegion(center:
