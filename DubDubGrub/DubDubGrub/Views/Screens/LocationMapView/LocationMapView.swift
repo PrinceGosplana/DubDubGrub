@@ -11,6 +11,7 @@ import SwiftUI
 
 struct LocationMapView: View {
     
+    @EnvironmentObject private var locationManager: LocationManager
     @StateObject private var viewModel = LocationMapViewModel()
 
     var body: some View {
@@ -23,7 +24,9 @@ struct LocationMapView: View {
             }
         }
         .onAppear {
-            viewModel.getLocations()
+            if locationManager.locations.isEmpty {
+                viewModel.getLocations(for: locationManager)
+            }
         }
     }
 }

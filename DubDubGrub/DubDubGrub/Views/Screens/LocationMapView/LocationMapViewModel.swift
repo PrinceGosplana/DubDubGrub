@@ -15,11 +15,9 @@ final class LocationMapViewModel: ObservableObject {
                                                                                longitude: -121.891054),
                                                        span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
 
-    @Published var locations: [DDGLocation] = []
-
-    func getLocations() {
-        locations = [DDGLocation(record: MockData.location),
-                     DDGLocation(record: MockData.location2),
-                     DDGLocation(record: MockData.location3)]
+    func getLocations(for locationManager: LocationManager) {
+        locationManager.locations = [DDGLocation(record: MockData.location),
+                                     DDGLocation(record: MockData.location2),
+                                     DDGLocation(record: MockData.location3)]
     }
 }
