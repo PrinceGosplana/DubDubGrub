@@ -17,7 +17,7 @@ struct LocationDetailView: View {
 
     var body: some View {
         VStack(spacing: 16) {
-            BannerImage(image: .defaultBannerAsset)
+            BannerImage(image: location.createBannerImage())
 
             HStack {
                 AddressLabel(address: location.address)
@@ -125,10 +125,10 @@ struct FirstNameAvatarView: View {
 
 struct BannerImage: View {
 
-    var image: ImageResource
+    var image: UIImage
 
     var body: some View {
-        Image(image)
+        Image(uiImage: image)
             .resizable()
             .scaledToFill()
             .frame(height: 120)

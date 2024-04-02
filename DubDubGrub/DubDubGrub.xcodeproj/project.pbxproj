@@ -21,6 +21,8 @@
 		8AFE175B2BB83D93002CC3AA /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE175A2BB83D93002CC3AA /* AlertItem.swift */; };
 		8AFE175E2BB84152002CC3AA /* LocationMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE175D2BB84152002CC3AA /* LocationMapViewModel.swift */; };
 		8AFE17872BBA8DE0002CC3AA /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE17862BBA8DE0002CC3AA /* LocationManager.swift */; };
+		8AFE17C92BBBD5F4002CC3AA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE17C82BBBD5F4002CC3AA /* Constants.swift */; };
+		8AFE17CD2BBBDB15002CC3AA /* CKAsset+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE17CC2BBBDB15002CC3AA /* CKAsset+Ext.swift */; };
 		8AFEBFD92BB6E8970006C41A /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFEBFD82BB6E8970006C41A /* LocationCell.swift */; };
 		8AFEBFDB2BB6EA710006C41A /* UserAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFEBFDA2BB6EA710006C41A /* UserAvatar.swift */; };
 		8AFEBFDD2BB6EEA10006C41A /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFEBFDC2BB6EEA10006C41A /* CustomModifiers.swift */; };
@@ -43,6 +45,8 @@
 		8AFE175A2BB83D93002CC3AA /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
 		8AFE175D2BB84152002CC3AA /* LocationMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMapViewModel.swift; sourceTree = "<group>"; };
 		8AFE17862BBA8DE0002CC3AA /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		8AFE17C82BBBD5F4002CC3AA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8AFE17CC2BBBDB15002CC3AA /* CKAsset+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKAsset+Ext.swift"; sourceTree = "<group>"; };
 		8AFEBFD82BB6E8970006C41A /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		8AFEBFDA2BB6EA710006C41A /* UserAvatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAvatar.swift; sourceTree = "<group>"; };
 		8AFEBFDC2BB6EEA10006C41A /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
@@ -79,6 +83,7 @@
 		8ADD6EF32BB472AC00C7D329 /* DubDubGrub */ = {
 			isa = PBXGroup;
 			children = (
+				8AFE17842BBA8DB9002CC3AA /* Utilities */,
 				8AFE17532BB80CF5002CC3AA /* Model */,
 				8AFEBFE32BB708A00006C41A /* Views */,
 				8ADD6EF42BB472AC00C7D329 /* DubDubGrubApp.swift */,
@@ -99,11 +104,9 @@
 		8AFE17532BB80CF5002CC3AA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8AFE17842BBA8DB9002CC3AA /* Utilities */,
 				8AFE17542BB80D98002CC3AA /* DDGLocation.swift */,
 				8AFE17562BB81024002CC3AA /* DDGProfile.swift */,
 				8AFE17582BB812A3002CC3AA /* MockData.swift */,
-				8AFE175A2BB83D93002CC3AA /* AlertItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -121,6 +124,9 @@
 			isa = PBXGroup;
 			children = (
 				8AFE17852BBA8DCA002CC3AA /* Managers */,
+				8AFE17C82BBBD5F4002CC3AA /* Constants.swift */,
+				8AFE175A2BB83D93002CC3AA /* AlertItem.swift */,
+				8AFE17CC2BBBDB15002CC3AA /* CKAsset+Ext.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -244,12 +250,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ADD6EF52BB472AC00C7D329 /* DubDubGrubApp.swift in Sources */,
+				8AFE17C92BBBD5F4002CC3AA /* Constants.swift in Sources */,
 				8AFEBFDB2BB6EA710006C41A /* UserAvatar.swift in Sources */,
 				8ADD6F072BB5571500C7D329 /* LocationMapView.swift in Sources */,
 				8AFE17592BB812A3002CC3AA /* MockData.swift in Sources */,
 				8AFE17872BBA8DE0002CC3AA /* LocationManager.swift in Sources */,
 				8AFE175E2BB84152002CC3AA /* LocationMapViewModel.swift in Sources */,
 				8AFE17572BB81024002CC3AA /* DDGProfile.swift in Sources */,
+				8AFE17CD2BBBDB15002CC3AA /* CKAsset+Ext.swift in Sources */,
 				8ADD6F142BB5CF3000C7D329 /* LocationDetailView.swift in Sources */,
 				8ADD6F092BB5573200C7D329 /* LocationListView.swift in Sources */,
 				8AFE175B2BB83D93002CC3AA /* AlertItem.swift in Sources */,
