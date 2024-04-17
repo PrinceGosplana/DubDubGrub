@@ -85,7 +85,7 @@ struct LocationDetailView: View {
 
 #Preview {
     NavigationStack {
-        LocationDetailView(location: DDGLocation(record: MockData.location))
+        LocationDetailView(location: DDGLocation(record: MockData.location2))
     }
 }
 

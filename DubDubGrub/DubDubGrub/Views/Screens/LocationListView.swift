@@ -18,7 +18,7 @@ struct LocationListView: View {
         NavigationStack {
                     List {
                         ForEach(locations) { location in
-                            NavigationLink(destination: LocationDetailView(location: DDGLocation(record: MockData.location))) {
+                            NavigationLink(destination: LocationDetailView(location: location)) {
                                 LocationCell(location: location)
                             }
                         }
